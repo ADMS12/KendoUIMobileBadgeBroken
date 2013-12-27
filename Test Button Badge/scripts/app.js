@@ -21,4 +21,9 @@
 
         app.application.skin(mobileSkin);
     };
+    app.badgeClick = function (e) {
+        var inp  = $("#badge-test").data("kendoMobileButton").badge();
+        inp++;
+         $("#badge-test").kendoMobileButton({ badge: inp });
+    };
 })(window);
